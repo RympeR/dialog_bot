@@ -4,8 +4,6 @@ import os
 # os.chdir('txt')
 phrases = list()
 res = {'Я': list(), 'Люблю': list(), 'Увлечения': list(), 'Другое': list()}
-os.chdir('txt')
-print(os.getcwd())
 with open("profiles.txt", 'r', encoding='utf-8') as f:
     for i in f.readlines():
         phrases.append(i.split('    '))
